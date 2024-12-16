@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <title> الصفحة الرئيسية </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <style>
+
+ .ms-grid8-main {
+	border-left-style: none;
+	border-right: .75pt solid navy;
+	border-top: .75pt solid navy;
+	border-bottom: .75pt solid navy;
+	background-color: white;
+  text-align: center;
+}
+.ms-grid8-tl {
+	font-weight: bold;
+	color: white;
+	border-left: .75pt solid navy;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid navy;
+	background-color: navy;
+  text-align: center;
+}
+.ms-grid8-left {
+	font-weight: normal;
+	color: black;
+	border-left: .75pt solid navy;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid navy;
+	background-color: white;
+  text-align: center;
+}
+.ms-grid8-even {
+	font-weight: normal;
+	color: black;
+	border-left: .75pt solid navy;
+	border-right-style: none;
+	border-top-style: none;
+	border-bottom: .75pt solid navy;
+	background-color: white;
+}
+  @font-face{
+font-family: myfont;
+src:url(css-Java/Khalid-Art-bold.ttf)
+}
+*{
+  font-size:x-large;
+}
+
+
+
+.auto-style1 {
+	color: #0068FF;
+	background-color: #D3DEEE;
+}
+.auto-style2 {
+	color: #0068FF;
+	background-color: #D1DDEE;
+}
+
+
+
+</style>
+
+
+<script language="JavaScript">
+function Login(){
+
+var username=document.login.username.value;
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="ahmed2082009" && password=="2024-2025") { window.location="home.html";  }
+else if(username=="" && password=="") { alert("ادخل اسم المستخدم وكلمة المرور الصحيحة");
+
+window.location="index.html";
+}
+else if(username=="") { alert("ادخل اسم المستخدم الصحيح");
+
+window.location="index.html";
+}
+else { alert("ادخل كلمة المرور الصحيحة");
+
+window.location="index.html";
+}
+ 
+}
+</script>
+
+
+</head>
+
+
+<body dir="rtl" style="background-image: url('logo/back.png'); background-attachment: fixed">
+
+
+    <script src="java.js"></script>
+    <iframe name="Iframe1" height="90px" width="100%" frameborder="0" marginheight="0" scrolling="no" src="topframe.html">
+        Your browser does not support inline frames or is currently configured not to display inline frames.
+    
+    </iframe>
+    
+
+    <div><form name="login">
+        <div>
+                <table   cellpadding="5"  cellspacing="5"  class="ms-grid8-main" dir="rtl" align="center">
+                    
+                    
+                  <tr >
+                      <td colspan="5" class="ms-grid8-tl" >ادخل اسم المستخدم وكلمة المرور</td>
+                  </tr>
+                  <tr>
+                      <td class="ms-grid8-left" >اسم المستخدم
+                      </td>
+                      <td  class="ms-grid8-even">
+                      <input type="text"   name="username" class="auto-style1" >
+                      </td>
+                  
+                      <td class="ms-grid8-even" >
+كلمة المرور                      </td>
+                      <td class="ms-grid8-even" >
+                      <input type="password"  
+                      name="password" class="auto-style2" ></td>
+                  
+                      <td  class="ms-grid8-even" >
+                      
+                     
+                        <input name="Button"   type="button" 
+                      onclick="Login()" value="دخول">
+                      
+                      </td>
+                  </tr>
+              </table>
+              </div>
+          </form>
+        
+  </div>
+
+   <table align="center" dir="rtl" >
+    <tr>                                                      
+        <td ><div>
+          <video width="400" height="300" controls poster="css-java/dd.png">
+            <source src="video/index5.mp4" type=""></video></div>
+        </td><td>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </td>
+       
+        <td >
+          <iframe src="slide0/slider.html" width="400" height="300" scrolling="no" marginheight="0" marginwidth="0" title=825></iframe>
+
+          
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">
+فيديو يوضح الانجازات المصرية
+      </td>
+     <td>
+      
+     </td>
+      <td style="text-align: center">بعض صور الانجازات       </td>
+    </tr></table>
+
+    <table align="center" dir="rtl" >
+      <tr>                                                      
+          <td ><div>
+            <video width="400" height="300" controls poster="css-java/dd.png">
+              <source src="video/indexmohafthbh.mp4" type="">
+          
+    </video>
+            
+            </div>
+          </td>
+          <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+         
+          <td >
+            <div>
+              <img src="pic/mapbh.png" width="400"  height="300" class="rounded-circle">
+            </div>
+  
+            
+          </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+  فيديو يوضح زيارة المحافظ
+        </td>
+       <td>
+      
+
+       </td>
+        <td style="text-align: center"> صورة مراكز المحافظة       </td>
+      </tr></table>
+
+   <footer class="bg-primary text-white text-center text-lg-start">
+      
+      <marquee behavior="scroll" direction="right" height="100px" scrollamount="5" scrolldelay="90" onMouseOver="this.stop()" onMouseOut="this.start()">
+        للتواصل |&nbsp;|
+        الاسم: احمد سعد السيد مرزوق صالح|&nbsp;|
+        رقم التليفون:01210705731|&nbsp;|
+        البريد الإلكتروني: ahmed01010152582@gmail.com|&nbsp;|
+        
+</marquee>
+      
+   
+  </footer>
+   
+	
+	
+
+</body>
+
+</html>
